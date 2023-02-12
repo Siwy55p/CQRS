@@ -16,9 +16,16 @@ namespace CQRS_Simple_and_Angular.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CretateUser(int i)
+        public async Task<IActionResult> CretateUser(string user)
         {
 
+            return Ok();
+        }
+        [HttpPost]
+        public async Task<IActionResult> add(string user)
+        {
+            //mediator send commend
+            int i = 0;
             return Ok();
         }
     }
